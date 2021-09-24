@@ -14,7 +14,7 @@
     <div class="w3-content" style="max-width:1400px">
 
     <header class="w3-container w3-center"> 
-      <h1><a href="index.html" class="home-link">Alex Soames | IAT 352</a></h1>
+      <h1><a href="signup.php" class="home-link">Alex Soames | IAT 352</a></h1>
     </header>
 
     <div class="w3-row">

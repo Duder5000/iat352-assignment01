@@ -17,7 +17,7 @@ if(!$fp) {
 require ('enrolled_functions.php');
 // display enrollments
 require('header.php');
-echo "<h1>Enrolled students</h1>";
+echo "<h1>Recipe List</h1>";
 
 e13_table_header();
 while ($arr = fgetcsv($fp)) {
