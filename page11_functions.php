@@ -15,25 +15,6 @@ function p11_textfield($label, $varname, $incomplete) {
 	echo"></td></tr>";
 }
 	
-function p11_gender($label,$varname,$options,$texts,$incomplete) {
-	global $$varname;
-	echo"<tr valign=\"top\"><td>$label</td><td ";
-	if ($incomplete && empty($$varname)) print("style=\"background-color:Yellow;\"");
-	echo ">";
-	
-	$i = 0;
-	foreach($options as $opt) 
-		p11_gender_option($texts[$i++],$varname, $opt, $incomplete);
-		
-	echo"</td></tr>";
-}
-function p11_gender_option($text,$varname, $opt, $incomplete) {
-	global $$varname;
-	echo "<input type=\"radio\" name=\"$varname\" value=\"$opt\" ";
-	if (!empty($$varname) && $$varname==$opt ) echo "checked"; 
-	echo ">$text<br>\n";
-}
-
 function p11_course($label,$varname,$options,$texts,$incomplete) {
 	global $$varname;
 	echo "<tr><td>Course:</td>";
