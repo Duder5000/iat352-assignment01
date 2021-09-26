@@ -15,7 +15,7 @@ if(!$fp) {
 	exit;
 }
 require ('enrolled_functions.php');
-// display enrollments
+
 require('header.php');
 echo "<h1>Recipe List</h1>";
 

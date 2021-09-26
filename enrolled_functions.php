@@ -7,6 +7,20 @@ function e13_table_header() {
 
 function e13_table_student($name, $list, $type) {
 	static $even = true;
+
+	$name = "<a href=\"details.php?rname=$name&rlist=$list&rtype=$type\">$name</a>";
+
+	echo "<tr";
+	if ($even) echo " style=\"background-color:DDDDDD\"";
+	echo "><td>$name</td><td>$type</td></tr>";
+	$even = !$even;
+}
+
+function e13_table_details($name, $list, $type) {
+	static $even = true;
+
+	$name = "<a href=\"details.php?rname=$name&rlist=$list&rtype=$type\">$name</a>";
+
 	echo "<tr";
 	if ($even) echo " style=\"background-color:DDDDDD\"";
 	echo "><td>$name</td><td>$type</td></tr>";
