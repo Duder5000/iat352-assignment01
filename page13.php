@@ -30,7 +30,7 @@
 	
 	p11_form_start();
 	p11_textfield('Recipe Name:','recipeName',$incomplete);
-	p11_textfield('Ingredient List:','ingredientList',$incomplete);
+	p11_textfield('Ingredient List </br>(separate by spaces):','ingredientList',$incomplete);
 	p11_course('Course:', 'course', ['','breakfast','lunch','dinner'],
 		['Select a course',
 		'Breakfast',
