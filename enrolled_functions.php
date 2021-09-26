@@ -2,14 +2,14 @@
 
 function e13_table_header() {
 	echo "<table>\n";
-	echo "<tr><th style=\"text-align:left;width:150px\">Name</th><th>Course</th></tr>";
+	echo "<tr><th style=\"text-align:left;width:150px\">Name</th><th>type</th></tr>";
 }
 
-function e13_table_student($fn, $ln, $course) {
+function e13_table_student($name, $list, $type) {
 	static $even = true;
 	echo "<tr";
 	if ($even) echo " style=\"background-color:DDDDDD\"";
-	echo "><td>$ln, $fn</td><td>$course</td></tr>";
+	echo "><td>$name</td><td>$type</td></tr>";
 	$even = !$even;
 }
 
